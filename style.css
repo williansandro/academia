@@ -1,0 +1,328 @@
+/* Core Style*/
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #333;
+  color: #fff;
+  font-size: 1.1em;
+  line-height: 1.5;
+  text-align: center;
+
+
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+h1, h2 h3 {
+  margin: 0;
+  padding: 1em 0;
+}
+/* Utilizar esse atributo caso a foto de fundo do logo principal for
+de cor clara
+.texto1 {
+  color: #333;
+}*/
+
+p {
+  margin: 0;
+  padding: 1em 0;
+  }
+
+.btn {
+  display: inline-block;
+  background: rgba(51, 51, 51, .3);
+  color: #fff;
+  text-decoration: none;
+  padding: 1em 2em;
+  border-radius: 5px;
+  border: 1px solid #666;
+  margin: .5em 0;
+}
+
+.btn:hover {
+  background: rgba(255, 255, 255, 0.4);
+  color: #333;
+  transition: .5s;
+}
+
+/* Header Shoecase*/
+
+#showcase {
+  min-height: 450px;
+  color: #fff;
+  text-align: center;
+
+}
+
+#showcase .bg-image {
+  position: absolute;
+  background: #333 url("logo1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 450px;
+  z-index: -1;
+  opacity: .5;
+}
+
+#showcase h1 {
+  padding-top: 100px;
+  padding-bottom: 0;
+}
+
+#showcase .content-wrap
+#section-a .content-wrap {
+  padding: 0 1.5em;
+}
+
+/* Section A*/
+
+#section-a {
+  background: #eaeaea;
+  color: #000;
+  padding-bottom: 2em;
+}
+
+/* Section B*/
+
+#section-b {
+
+  padding: 3em 2em ;
+}
+
+#section-b ul {
+
+
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+}
+
+#section-b li {
+
+  border-radius: 5px;
+  margin-bottom: 1em;
+  background: #fff;
+  color: #333;
+
+}
+
+#section-b a {
+
+  color: #000;
+  background-color: #fff;
+  padding: 8px;
+  border-radius: 7px;
+}
+
+#section-b a:hover {
+
+  color: #000;
+  transition: .5s;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#section-b p{
+  height: 100px;
+}
+
+.card{
+
+  height: 500px;
+}
+
+.card-content {
+  border-radius: 5px;
+  padding: 1.5em;
+  height: 200px;
+}
+.card img {
+  text-align: center;
+  border-radius: 5px;
+  width: 100%;
+  height: 250px;
+
+}
+
+.card-title{
+
+  margin-top: -20px;
+}
+
+/* Section C*/
+
+#section-c {
+  background: #fff;
+  color: #333;
+  padding: 2em;
+}
+
+#section-c  h2 {
+  text-align: center;
+}
+
+#section-c ul {
+  list-style: none;
+  margin: 0;
+}
+
+#section-c ul li {
+  background-color: #2690D4;
+  padding: 5px;
+}
+
+
+#section-c ul li a{
+  text-decoration: none;
+  color: black;
+}
+
+#section-c ul li a:hover {
+  color: #fff;
+  transition: .3s;
+}
+
+
+/* Section D*/
+
+#section-d .box {
+  padding: 2em;
+  color: #fff;
+}
+
+#box1{
+  padding-top: 10px;
+  background: #2690d4;
+}
+
+/* Footer */
+
+#main-footer {
+  padding: 1em;
+  background: #000;
+  color: #fff;
+  text-align: center;
+  margin: 1px;
+
+}
+
+#main-footer a {
+  color: #2690d4;
+  text-decoration: none;
+  padding: 15px;
+}
+
+#main-footer a:hover {
+  color: rgb(50, 50, 50);
+  transition: .3s;
+}
+
+#contato a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#botao {
+  background: white;
+}
+
+
+
+
+
+
+/* Media Queres*/
+
+@media (min-width: 700px) {
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr repeat(2, minmax(auto, 25em))
+    1fr;
+  }
+
+  #section-a .content-text {
+    columns: 2;
+    column-gap: 2em;
+  }
+
+  #section-a .content-text p {
+    padding-top: 0;
+  }
+
+
+  .content-wrap, #section-b ul {
+    grid-column: 2/4;
+  }
+
+  .box, #man-footer div {
+    grid-column: span 2;
+  }
+
+  #section-b ul {
+    display: flex;
+    justify-content: space-around;
+
+  }
+
+  #section-b li {
+
+    width: 31%;
+  }
+
+  #section-b a {
+    text-decoration: none;
+    list-style: none;
+    color: black;
+  }
+
+  #section-b a:hover {
+    color: rgb(38, 144, 212);
+    text-decoration: none;
+  }
+
+  #section-c ul li {
+    padding: 20px;
+    display: inline-flex;
+    list-style: none;
+    background-color: #2690D4;
+    border-radius: 7px;
+  }
+
+  #section-c ul li a{
+    text-decoration: none;
+    color: black;
+
+  }
+
+  #section-c ul li a:hover {
+    color: #fff;
+    transition: .3s;
+  }
+
+  #botao {
+    list-style: none;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 5px;
+    color: rgb(38, 144, 212);
+
+  }
+
+  #botao:hover {
+    color: black;
+    background-color: rgb(38, 144, 212);
+  }
+
+
+
+
+
+}
